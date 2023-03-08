@@ -6,7 +6,7 @@ from spotipy.oauth2 import SpotifyOAuth
 
 
 #client_credentials_manager = SpotifyClientCredentials(client_id="6003907958e9442895a65c76dc38e558", client_secret="25cf8b24506149b498d9a2b83baca1a3")
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='6003907958e9442895a65c76dc38e558', client_secret='25cf8b24506149b498d9a2b83baca1a3', redirect_uri='http://localhost:8080/callback', scope='playlist-modify-public'))
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='YOUR_CLIENT_ID', client_secret='YOUR_CLIENT_SECRET', redirect_uri='http://localhost:8080/callback', scope='playlist-modify-public'))
 
 
 #follower_min = int(input("Enter the minimum follower count: "))
@@ -15,7 +15,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='6003907958e9442895a65c
 
 follower_min = 20000
 follower_max = 20500
-genre = 'german'
+genre = 'jazz'
 selected_tracks = []
 countartists=0
 limit=2
